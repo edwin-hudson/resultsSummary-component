@@ -6,13 +6,21 @@
 --Green-teal: hsl(166, 100%, 37%);
 --Cobalt-blue: hsl(234, 85%, 45%);
 
+/* Transparent summary colors */
+
+--light-red-t: hsl(353, 100%, 98%);
+--light-yellow-t: hsl(33, 100%, 98%);
+--light-teal-t: hsl(158, 73%, 97%);
+--light-blue-t: hsl(240, 83%, 98%);
+
     /* Gradients */
 
---Light-slate-blue-background: hsl(252, 100%, 67%);
---Light-royal-blue-background: hsl(241, 81%, 54%);
+--Light-slate-blue-bg: hsla(252, 100%, 67%);
+--Light-royal-blue-bg: hsl(241, 81%, 54%);
 
 --Violet-blue-circle: hsla(256, 72%, 46%, 1);
 --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
 
     /* Neutral */
 
@@ -33,4 +41,230 @@
     margin: 0;
     padding: 0;
     font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: var(--Pale-blue);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1440px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: var(--White);
+    border-radius: 1.8rem;
+    width: 43rem;
+    height: 30rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card1 {
+    background: linear-gradient(to bottom, var(--Light-slate-blue-bg) 10%, var(--Light-royal-blue-bg) 100%);
+    border-radius: 1.8rem;
+}
+
+.front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem;
+}
+
+.result {
+    /* margin: 0.4rem; */
+    font-size: 1.5rem;
+    color: var(--Light-lavender);
+}
+
+.score-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 12rem;
+    width: 12rem;
+    margin: 1.5rem 0;
+    background: linear-gradient(to bottom, var(--Violet-blue-circle) 10%, var(--Persian-blue-circle) 100%);
+    border-radius: 50%;
+}
+
+h1 .score-num {
+    color: var(--White);
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+h1 .score-den {
+    color: var(--Light-lavender);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.title {
+    color: var(--White);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.description {
+    font-size: 1.07rem;
+    color: var(--Light-lavender);
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.main-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100%;
+    height: 100%;
+    padding: 2.2rem;
+}
+
+.section.top {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+}
+
+.summary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.sum-title {
+    color: var(--Dark-gray-blue);
+    font-size: 1.5rem;
+    padding: 0.4rem 0 0.8rem 0;
+}
+
+.section.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.summary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 3.4rem;
+    width: 100%;
+    margin: 0.5rem 0;
+    border-radius: 10px;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.left h4{
+    margin-left: 0.5rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+.react-sum {
+    background: var(--light-red-t);
+    
+}
+
+.react-sum h4 {
+    color: var(--Light-red);
+}
+
+.mem-sum {
+    background: var(--light-yellow-t);
+    
+}
+
+.mem-sum h4 {
+    color: var(--Orangey-yellow);
+}
+
+.verb-sum {
+    background: var(--light-teal-t);
+}
+
+.verb-sum h4 {
+    color: var(--Green-teal);
+}
+
+.visu-sum {
+    background: var(--light-blue-t);
+}
+
+.visu-sum h4 {
+    color: var(--Cobalt-blue);
+}
+
+
+.section.foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    width: 100%;
+    height: 3.5rem;
+    outline: none;
+    border: none;
+    border-radius: 6rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--White);
+    background: linear-gradient(to bottom, var(--Light-slate-blue-bg) 5%, var(--Light-royal-blue-bg) 100%);
 }
