@@ -72,6 +72,7 @@ main {
     border-radius: 1.8rem;
     width: 43rem;
     height: 30rem;
+    overflow: hidden;
 }
 
 article {
@@ -279,12 +280,37 @@ h4 {
 }
 
 
-/* @media screen (max-width: 768pc) {
+@media screen and (max-width: 768px) {
+    .description {
+        min-width: 16rem;
+    }
+    .scores {
+        min-width: 5rem;
+    }
+}
 
-    
-} */
+@media screen and (max-width: 500px) {
+    body {
+        height: 100%;
+    }
 
-@media screen (max-width: 768pc) {
+    main {
+        flex-direction: column;
+        height: 100%;
+        border-radius: 0px;
+    }
+
+        .card1 {
+            border-radius: 0rem 0rem  1.8rem  1.8rem ;
+    }
+
+    section.foot {
+        margin-top: 2rem;
+    }
+
+    .description {
+        width: 35ch;
+    }
     
     
 }
