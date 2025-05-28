@@ -15,10 +15,10 @@
 
     /* Gradients */
 
---Light-slate-blue-bg: hsla(252, 100%, 67%);
+--Light-slate-blue-bg: hsl(252, 98%, 63%);
 --Light-royal-blue-bg: hsl(241, 81%, 54%);
 
---Violet-blue-circle: hsla(256, 72%, 46%, 1);
+--Violet-blue-circle: hsl(256, 71%, 46%);
 --Persian-blue-circle: hsla(241, 72%, 46%, 0);
 
 
@@ -44,27 +44,30 @@
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
     width: 100%;
     background: var(--Pale-blue);
 }
 
-header {
+.flex {
     display: flex;
+}
+
+.al-center {
     align-items: center;
+}
+
+.center {
     justify-content: center;
+}
+
+header {
     width: 100%;
     max-width: 1440px;
 }
 
 main {
-    display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     background: var(--White);
     border-radius: 1.8rem;
     width: 43rem;
@@ -72,9 +75,7 @@ main {
 }
 
 article {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
     height: 100%;
 }
@@ -85,26 +86,19 @@ article {
 }
 
 .front {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
     width: 100%;
     height: 100%;
     padding: 2.5rem;
 }
 
 .result {
-    /* margin: 0.4rem; */
     font-size: 1.5rem;
     color: var(--Light-lavender);
 }
 
 .score-circle {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 12rem;
     width: 12rem;
     margin: 1.5rem 0;
@@ -139,20 +133,15 @@ h1 .score-den {
 }
 
 .main-summary {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
     width: 100%;
     height: 100%;
     padding: 2.2rem;
 }
 
 .section.top {
-    display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
     width: 100%;
 }
 
@@ -165,7 +154,6 @@ h1 .score-den {
 }
 
 .left, .right {
-    display: flex;
     flex-direction: row;
     align-items: stretch;
     justify-content: center;
@@ -187,6 +175,7 @@ h1 .score-den {
 }
 
 .summary {
+    background: red;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -197,11 +186,20 @@ h1 .score-den {
     border-radius: 10px;
 }
 
-.left, .right {
-    display: flex;
+.left {
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    padding: 0 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.right {
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    padding: 0 1rem;
     width: 100%;
     height: 100%;
 }
@@ -248,11 +246,17 @@ h4 {
     color: var(--Cobalt-blue);
 }
 
+.scores, .den {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--Dark-gray-blue);
+}
+
+.den {
+    opacity: 0.5;
+}
 
 .section.foot {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     height: 100%;
 }
