@@ -270,5 +270,21 @@ h4 {
     font-size: 1rem;
     font-weight: 700;
     color: var(--White);
+    background: var(--Dark-gray-blue);
+    cursor: pointer;
+}
+
+.btn:active {
     background: linear-gradient(to bottom, var(--Light-slate-blue-bg) 5%, var(--Light-royal-blue-bg) 100%);
+}
+
+
+/* @media screen (max-width: 768pc) {
+
+    
+} */
+
+@media screen (max-width: 768pc) {
+    
+    
 }
